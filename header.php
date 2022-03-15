@@ -26,7 +26,7 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'webcodedesigner-theme-dev' ); ?></a>
 
 	<header id="masthead" class="site-header w3-row">
-		<div class="site-branding">
+		<div class="site-branding w3-col m4">
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
@@ -45,7 +45,7 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
+		<nav id="site-navigation" class="main-navigation w3-row m8">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'webcodedesigner-theme-dev' ); ?></button>
 			<?php
 			wp_nav_menu(
